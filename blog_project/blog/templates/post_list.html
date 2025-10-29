@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Blog Posts</h1>
+        <!-- Blog posts will be listed here -->
+
+        <ul>
+        {% for p in posts %}
+            <li>
+            <b>{{ p.title }}</b> posted {{ p.created_on|timesince }} ago
+            </li>
+        {% endfor %}
+        </ul>
+
+    </body>
+</html>
